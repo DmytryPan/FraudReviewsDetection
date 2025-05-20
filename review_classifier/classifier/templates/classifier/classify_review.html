@@ -43,8 +43,8 @@
 <body>
     <div class="container">
         <div class="card shadow">
-            <h3 class="text-center">Movie review classifier</h3>
-            <p class="text-center">Enter your review in English, and we will determine whether you praise the film or not.</p>
+            <h3 class="text-center">Классификатор отзывов о ресторанах</h3>
+            <p class="text-center">Введите отзыв на английском языке, а я скажу, является ли он настоящим</p>
             <form id="reviewForm">
                 <div class="mb-3">
                     <label for="review" class="form-label">Your review:</label>
@@ -75,8 +75,7 @@
                     },
                     success: function(response) {
                         $('#loader').hide(); // Hide loading spinner
-                        const result = `<h4>Prediction: ${response.prediction}</h4>
-                                        <p>Rating: ${response.rating} / 10</p>`;
+                        const result = `<h4>Prediction: ${response.prediction}</h4>`
                         $('#response').html(result);
                     },
                     error: function() {
