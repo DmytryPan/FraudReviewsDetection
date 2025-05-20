@@ -9,6 +9,7 @@ Django==5.2
 filelock==3.17.0
 fsspec==2025.3.2
 gmpy2==2.2.1
+gunicorn==21.2.0
 importlib_metadata==8.5.0
 Jinja2==3.1.6
 joblib==1.4.2
