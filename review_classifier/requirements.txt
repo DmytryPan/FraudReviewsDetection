@@ -1,0 +1,9 @@
+Django==4.1
+gunicorn==21.2.0
+joblib==1.4.2
+nltk==3.9.1
+scikit_learn==1.5.1
+numpy==1.26.4
+regex==2024.9.11
+pandas==2.2.2
+whitenoise==6.7.0
