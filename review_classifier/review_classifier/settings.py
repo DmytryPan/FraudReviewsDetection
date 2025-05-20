@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'DEFAULT_SECRET_KEY')
 # DEBUG = True
 DEBUG = os.environ.get('RENDER') is None
 
-ALLOWED_HOSTS = ['caselabchallenge.onrender.com', '127.0.0.1']
+ALLOWED_HOSTS = ['fraudreviewsdetection.onrender.com', '127.0.0.1']
 
 
 # Application definition
