@@ -44,13 +44,13 @@
     <div class="container">
         <div class="card shadow">
             <h3 class="text-center">Классификатор отзывов о ресторанах</h3>
-            <p class="text-center">Введите отзыв на английском языке, а я скажу, является ли он настоящим</p>
+            <p class="text-center">Введите отзыв на английском языке, а я скажу, является ли он настоящим или нет</p>
             <form id="reviewForm">
                 <div class="mb-3">
-                    <label for="review" class="form-label">Your review:</label>
+                    <label for="review" class="form-label">Введите текст отзыва:</label>
                     <textarea class="form-control" id="review" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-custom">Classify</button>
+                <button type="submit" class="btn btn-custom">Классифицировать</button>
                 <div class="loader" id="loader"></div>
             </form>
             <div class="response" id="response"></div>
@@ -75,12 +75,12 @@
                     },
                     success: function(response) {
                         $('#loader').hide(); // Hide loading spinner
-                        const result = `<h4>Prediction: ${response.prediction}</h4>`
+                        const result = `<h4>${response.prediction}</h4>`
                         $('#response').html(result);
                     },
                     error: function() {
                         $('#loader').hide(); // Hide loading spinner
-                        $('#response').html('<p class="text-danger">An error occurred. Please try again.</p>');
+                        $('#response').html('<p class="text-danger">Произошла ошибка. Попробуйте снова.</p>');
                     }
                 });
             });
