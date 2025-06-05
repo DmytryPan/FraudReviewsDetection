@@ -13,7 +13,7 @@
 *[https://fraudreviewsdetection.onrender.com/](https://fraudreviewsdetection.onrender.com/)*
 
 либо запустить локально. Для  этого необходимо:
-- Склонировать репозиторий ```git clone https://github.com/ваш_логин/название_репозитория.git ``` 
+- Склонировать репозиторий ```git clone https://github.com/DmytryPan/FraudReviewsDetection.git ``` 
 - Установить все зависимости из файла *requirements.txt* ```pip install -r requirements.txt```
 - Находясь в корневой директории приложения, запустить сервер при помощи команды ```python manage.py runserver```, после чего сервер будет запущен по адресу *http://127.0.0.1:8000/*
 
