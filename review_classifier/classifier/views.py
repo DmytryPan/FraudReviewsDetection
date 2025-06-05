@@ -3,15 +3,19 @@ from django.http import JsonResponse
 import os
 import numpy as np
 import nltk
-
+nltk.data.path.joint(os.environ.get('NLTK_DARA'))
 print("Текущая директория:", os.getcwd())
 print("Список директорий:", os.listdir())
-print("Путь к nltk: ", os.path.exists("/opt/render/nltk_data"))
+# print("Путь к nltk: ", os.path.exists("/opt/render/nltk_data"))
+# NLTK_DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'nltk_data')
 
-if not(os.path.exists("/opt/render/nltk_data")):
-    nltk.download('stopwords')
-    nltk.download('punkt')
-    nltk.download('punkt_tab')
+# if not(os.path.exists("/opt/render/nltk_data")):
+#     nltk.download('stopwords')
+#     nltk.download('punkt')
+#     nltk.download('punkt_tab')
+
+
+
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import pickle

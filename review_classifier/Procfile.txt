@@ -1,1 +1,1 @@
-web: gunicorn --timeout 120 review_classifier.wsgi:application
+web: gunicorn --timeout 180 review_classifier.wsgi:application
