@@ -3,10 +3,12 @@ from django.http import JsonResponse
 import os
 import numpy as np
 import nltk
-nltk.data.path.append(os.environ.get('NLTK_DATA'))
+
+# nltk.data.path.append(os.environ.get('NLTK_DATA'))
+
 print("Текущая директория:", os.getcwd())
 print("Список директорий:", os.listdir())
-# print("Путь к nltk: ", os.path.exists("/opt/render/nltk_data"))
+print("Путь к nltk: ", os.path.exists("/opt/render/nltk_data"))
 # NLTK_DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'nltk_data')
 
 # if not(os.path.exists("/opt/render/nltk_data")):
