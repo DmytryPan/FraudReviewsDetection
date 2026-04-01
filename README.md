@@ -22,7 +22,6 @@
 
 ## Структура репозитория
 
-FraudReviewsDetection
 ├── Notebooks/ # Jupyter-ноутбуки с исследованиями
 
 │ ├── yelpchi-pytorch.ipynb # Модели PyTorch для YelpChi
