@@ -23,19 +23,19 @@
 ## Структура репозитория
 
 FraudReviewsDetection/
-├── Notebooks/ # Jupyter-ноутбуки с исследованиями
-| ├── yelpnyc-pytorch.ipynb # Модели PyTorch для YelpNYC
-│ ├── yelpchi-pytorch.ipynb # Модели PyTorch для YelpChi
-│ ├── yelpzip-pytorch.ipynb # Модели PyTorch для YelpZip
-│ ├── yelpnyc-kmeans-undersampling-rapids-models.ipynb 
-│ ├── yelpchi-kmeans-undersampling-rapids-mo.ipynb
-│ ├── yelpzip-kmeans-undersampling-rapids-mo.ipynb
-│ └── yelpchi-add-generated-review-by-phi-2.ipynb
+├── Notebooks/                          # Jupyter-ноутбуки с исследованиями
+│   ├── yelpnyc-pytorch.ipynb           # Модели PyTorch для YelpNYC
+│   ├── yelpchi-pytorch.ipynb           # Модели PyTorch для YelpChi
+│   ├── yelpzip-pytorch.ipynb           # Модели PyTorch для YelpZip
+│   ├── yelpnyc-kmeans-undersampling-rapids-models.ipynb
+│   ├── yelpchi-kmeans-undersampling-rapids-mo.ipynb
+│   ├── yelpzip-kmeans-undersampling-rapids-mo.ipynb
+│   └── yelpchi-add-generated-review-by-phi-2.ipynb
 │
-├── review_classifier/ # Django-приложение для классификации
-│ ├── manage.py
-│ ├── requirements.txt
-│ └── ...
+├── review_classifier/                  # Django-приложение для классификации
+│   ├── manage.py
+│   ├── requirements.txt
+│   └── ...
 │
 ├── README.md
 └── .gitignore
@@ -49,8 +49,8 @@ FraudReviewsDetection/
 | Датасет | Описание | Классы |
 |---------|----------|--------|
 | YelpChi | Отзывы о ресторанах в Чикаго | fake / genuine 
-| YelpZip | Отзывы о отелях в Нью-Йорке | fake / genuine 
-| YelpNYC | Отзывы о отелях в Нью-Йорке | fake / genuine 
+| YelpNYC | Отзывы о ресторанах в Нью-Йорке | fake / genuine 
+| YelpZip | Отзывы о ресторанах по Америке | fake / genuine 
 
 Все датасеты характеризуются сильным дисбалансом классов, что потребовало применения специальных техник сэмплирования.
 ---
