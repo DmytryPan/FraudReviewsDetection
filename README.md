@@ -24,19 +24,33 @@
 
 FraudReviewsDetection
 ├── Notebooks/ # Jupyter-ноутбуки с исследованиями
+
 │ ├── yelpchi-pytorch.ipynb # Модели PyTorch для YelpChi
+
 │ ├── yelpnyc-pytorch.ipynb # Модели PyTorch для YelpNYC
+
 │ ├── yelpzip-pytorch.ipynb # Модели PyTorch для YelpZip
+
 │ ├── yelpchi-kmeans-undersampling-rapids-mo.ipynb
+
 │ ├── yelpnyc-kmeans-undersampling-rapids-models.ipynb
+
 │ ├── yelpzip-kmeans-undersampling-rapids-mo.ipynb
+
 │ └── yelpchi-add-generated-review-by-phi-2.ipynb
+
 ├── review_classifier/ # Django-приложение
+
 │ ├── manage.py
+
 │ ├── requirements.txt
+
 │ └── ...
+
 ├── README.md
+
 └── .gitignore
+
 ---
 
 ## Датасеты
